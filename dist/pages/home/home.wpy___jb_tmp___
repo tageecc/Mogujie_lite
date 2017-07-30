@@ -1,0 +1,615 @@
+<template>
+  <!-- 搜索 -->
+  <include src="../__template/searchBar/searchBar.wxml"/>
+
+  <!-- 轮播 -->
+  <swiper class="g-swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+          duration="{{duration}}" circular="true" indicator-active-color="#f96969">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <navigator url="{{item.link}}" hover-class="navigator-hover">
+          <image src="{{item.url}}" class="slide-image" mode="aspectFit"/>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 特卖 -->
+  <view class="g-intro">
+    <!-- 品牌特卖 -->
+    <view class="intro-item">
+      <text class="title">品牌特卖</text>
+      <text class="subtitle">大牌9.9元疯狂秒</text>
+      <image src="https://s3.mogucdn.com/mlcdn/c45406/170721_6j9i7l8448f6e6jibhkc28h7agl6i_200x200.png"/>
+    </view>
+    <!-- 新人专享 -->
+    <view class="intro-item">
+      <text class="title">品牌特卖</text>
+      <text class="subtitle">大牌9.9元疯狂秒</text>
+      <image src="https://s3.mogucdn.com/mlcdn/c45406/170721_6j9i7l8448f6e6jibhkc28h7agl6i_200x200.png"/>
+    </view>
+    <!-- 1元拼团 -->
+    <view class="intro-item">
+      <text class="title">品牌特卖</text>
+      <text class="subtitle">大牌9.9元疯狂秒</text>
+      <image src="https://s3.mogucdn.com/mlcdn/c45406/170721_6j9i7l8448f6e6jibhkc28h7agl6i_200x200.png"/>
+    </view>
+  </view>
+
+  <!-- 快抢秒杀 -->
+  <view class="g-seckill">
+    <view class="flex">
+      <text class="title">16点快抢·距离结束</text>
+      <view class="deadline">
+        <text>00</text>
+        :
+        <text>00</text>
+        :
+        <text>00</text>
+      </view>
+      <view class="more"></view>
+    </view>
+
+    <scroll-view scroll-x class="scroll">
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/1689c6/170721_3hd3lhg3je2b3ei8bc93f3f349b77_640x640.jpg_320x999.webp"/>
+        <text class="title">去死皮去角质嫩白美腿足膜</text>
+        <text class="new-price">¥39.00</text>
+        <text class="old-price">¥89.00</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/1689c6/170721_3hd3lhg3je2b3ei8bc93f3f349b77_640x640.jpg_320x999.webp"/>
+        <text class="title">去死皮去角质嫩白美腿足膜</text>
+        <text class="new-price">¥39.00</text>
+        <text class="old-price">¥89.00</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/1689c6/170721_3hd3lhg3je2b3ei8bc93f3f349b77_640x640.jpg_320x999.webp"/>
+        <text class="title">去死皮去角质嫩白美腿足膜</text>
+        <text class="new-price">¥39.00</text>
+        <text class="old-price">¥89.00</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/1689c6/170721_3hd3lhg3je2b3ei8bc93f3f349b77_640x640.jpg_320x999.webp"/>
+        <text class="title">去死皮去角质嫩白美腿足膜</text>
+        <text class="new-price">¥39.00</text>
+        <text class="old-price">¥89.00</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/1689c6/170721_3hd3lhg3je2b3ei8bc93f3f349b77_640x640.jpg_320x999.webp"/>
+        <text class="title">去死皮去角质嫩白美腿足膜</text>
+        <text class="new-price">¥39.00</text>
+        <text class="old-price">¥89.00</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 特惠促销 -->
+  <view class="g-promotion">
+    <View class="promotion-title">超实惠-促销直达</View>
+    <view class="sec1">
+      <view class="left">
+        <text class="title">女装年中聚惠</text>
+        <text class="subtitle">惠至4折</text>
+        <image
+          src="http://s2.mogucdn.com/mlcdn/c45406/170721_42k9hf8g1biib5bclb66d4bfd5351_200x200.png_360x360.v1cAC.70.webp"/>
+      </view>
+      <view class="right">
+        <view>
+          <view class="txt_content">
+            <text class="title">连衣裙嗨购</text>
+            <text class="subtitle">月末狂欢</text>
+          </view>
+          <image
+            src="http://s2.mogucdn.com/mlcdn/c45406/170721_45j8e6ijf01e3g5e9e9c6l1gfchk2_180x180.png_280x280.v1cAC.70.webp"/>
+        </view>
+        <view>
+          <view class="txt_content">
+            <text class="title">省心出门装</text>
+            <text class="subtitle">百元搞定一身搭</text>
+          </view>
+          <image
+            src="http://s11.mogucdn.com/mlcdn/c45406/170721_14l1h3acgga4160dbi3e5dgc0iggk_180x180.png_280x280.v1cAC.70.webp"/>
+        </view>
+      </view>
+    </view>
+    <view class="sec2">
+      <view class="flex">
+        <text class="title">凉鞋2双折扣价</text>
+        <text class="subtitle">夏清仓&秋上新</text>
+        <image
+          src="http://s17.mogucdn.com/mlcdn/c45406/170721_3508g869264k2k79k4igf1i09c671_180x180.png_280x280.v1cAC.70.webp"/>
+      </view>
+      <view class="flex">
+        <text class="title">凉鞋2双折扣价</text>
+        <text class="subtitle">夏清仓&秋上新</text>
+        <image
+          src="http://s17.mogucdn.com/mlcdn/c45406/170721_3508g869264k2k79k4igf1i09c671_180x180.png_280x280.v1cAC.70.webp"/>
+      </view>
+      <view class="flex">
+        <text class="title">凉鞋2双折扣价</text>
+        <text class="subtitle">夏清仓&秋上新</text>
+        <image
+          src="http://s17.mogucdn.com/mlcdn/c45406/170721_3508g869264k2k79k4igf1i09c671_180x180.png_280x280.v1cAC.70.webp"/>
+      </view>
+    </view>
+  </view>
+
+  <!-- 热门市场 -->
+  <view class="g-hotmarket">
+    <view class="title">热门市场</view>
+    <view class="list">
+      <view class="item">
+        <image
+          src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+      <view class="item">
+        <image
+          src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+      <view class="item">
+        <image
+          src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+      <view class="item">
+        <image
+          src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+      <view class="item">
+        <image
+          src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+      <view class="item">
+        <image
+          src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 猜你喜欢 -->
+  <view class="g-like">
+    <view class="title">猜你喜欢</view>
+    <view class="list">
+      <view class="item">
+        <image
+          src="http://s2.mogucdn.com/mlcdn/c45406/170415_057g127ll7lfc56a18h6jkc0c543d_640x960.jpg_600x800.v1cAC.70.webp"/>
+        <view class="info">
+          <view class="label">
+            <text>无袖连衣裙</text>
+            <text>露背</text>
+            <text>蕾丝</text>
+            <text>名媛</text>
+            <text>性感</text>
+            <text>镂空</text>
+            <text>高腰</text>
+          </view>
+          <view class="number">
+            <view class="prize">¥148</view>
+            <view class="collect">4412</view>
+          </view>
+        </view>
+      </view>
+      <view class="item">
+        <image
+          src="http://s2.mogucdn.com/mlcdn/c45406/170415_057g127ll7lfc56a18h6jkc0c543d_640x960.jpg_600x800.v1cAC.70.webp"/>
+        <view class="info">
+          <view class="label">
+            <text>无袖连衣裙</text>
+            <text>露背</text>
+            <text>蕾丝</text>
+            <text>名媛</text>
+            <text>性感</text>
+            <text>镂空</text>
+            <text>高腰</text>
+          </view>
+          <view class="number">
+            <view class="prize">¥148</view>
+            <view class="collect collect_cur">4412</view>
+          </view>
+        </view>
+      </view>
+      <view class="item">
+        <image
+          src="http://s2.mogucdn.com/mlcdn/c45406/170415_057g127ll7lfc56a18h6jkc0c543d_640x960.jpg_600x800.v1cAC.70.webp"/>
+        <view class="info">
+          <view class="label">
+            <text>无袖连衣裙</text>
+            <text>露背</text>
+            <text>蕾丝</text>
+            <text>名媛</text>
+            <text>性感</text>
+            <text>镂空</text>
+            <text>高腰</text>
+          </view>
+          <view class="number">
+            <view class="prize">¥148</view>
+            <view class="collect">4412</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<style lang="scss">
+  @import "../__template/searchBar/searchBar.wxss";
+
+  /* 轮播 */
+
+  .g-swiper {
+    padding-top: 46 rpx;
+    height: 400 rpx;
+    background-color: #fff;
+    .slide-image {
+      width: 100%;
+    }
+  }
+
+  .g-swiper
+
+  /* 特卖 */
+
+  .g-intro {
+    display: flex;
+    flex-direction: row;
+    padding: 26 rpx 0;
+  }
+
+  .g-intro .intro-item {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+
+  .g-intro .intro-item::after {
+    content: '';
+    width: 1px;
+    height: 81.2%;
+    border-right: 1px solid #eee;
+    position: absolute;
+    right: -1px;
+    top: 10%;
+  }
+
+  .g-intro .intro-item text {
+    display: block;
+    color: #666;
+    font-size: 26 rpx;
+  }
+
+  .g-intro .intro-item .title {
+    color: #ff6801;
+    font-size: 36 rpx;
+    margin-bottom: 10 rpx;
+  }
+
+  .g-intro .intro-item image {
+    width: 120 rpx;
+    height: 120 rpx;
+    margin: 10 rpx auto 0;
+  }
+
+  /* 快抢秒杀 */
+
+  .g-seckill {
+    padding: 30 rpx 20 rpx;
+    box-sizing: border-box;
+    margin-top: 20 rpx;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .g-seckill .title {
+    color: #000;
+    font-size: 36 rpx;
+  }
+
+  .g-seckill .deadline {
+    margin-left: 10 rpx;
+  }
+
+  .g-seckill .deadline text {
+    color: white;
+    font-family: CircularStd-BlackItalic;
+    font-size: 30 rpx;
+    padding: 3 rpx 6 rpx;
+    display: inline-block;
+    border-radius: 10 rpx;
+    background-color: black;
+  }
+
+  .g-seckill .more {
+    position: absolute;
+    right: 20 rpx;
+    width: 120 rpx;
+    height: 44 rpx;
+    background: url(../../images/more.png) no-repeat right center;
+    background-size: contain;
+  }
+
+  .g-seckill .scroll {
+    white-space: nowrap;
+  }
+
+  .g-seckill .scroll .item {
+    display: inline-block;
+    width: 180 rpx;
+    margin-right: 15 rpx;
+  }
+
+  .g-seckill .scroll image {
+    display: block;
+    width: 180 rpx;
+    height: 180 rpx;
+    margin: 0 auto;
+  }
+
+  .g-seckill .scroll .title {
+    color: #666;
+    font-size: 22 rpx;
+    display: block;
+    overflow: hidden;
+    width: 180 rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .g-seckill .scroll .new-price {
+    color: #f25;
+    font-size: 30 rpx;
+  }
+
+  .g-seckill .scroll .old-price {
+    color: #888;
+    font-size: 20 rpx;
+    text-decoration: line-through;
+    margin-left: 10 rpx;
+  }
+
+  /* 特惠促销 */
+
+  .g-promotion {
+    padding-top: 30 rpx;
+    box-sizing: border-box;
+    margin-top: 20 rpx;
+    flex-direction: column;
+  }
+
+  .g-promotion .promotion-title {
+    color: #333;
+    font-size: 36 rpx;
+    text-indent: 20 rpx;
+  }
+
+  .g-promotion .sec1 {
+    border: 1px solid #e5e5e5;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 20 rpx;
+  }
+
+  .g-promotion .title {
+    font-size: 28 rpx;
+    color: #333;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .g-promotion .subtitle {
+    color: #ff5f7e;
+    font-size: 24 rpx;
+    margin-top: 10 rpx;
+  }
+
+  .g-promotion .left {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 70 rpx;
+    border-right: 1 rpx solid #e5e5e5;
+  }
+
+  .g-promotion .left image {
+    width: 220 rpx;
+    height: 220 rpx;
+    margin: 0 auto;
+  }
+
+  .g-promotion .right {
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .g-promotion .right > view:first-child {
+    border-bottom: 1 rpx solid #e5e5e5;
+  }
+
+  .g-promotion .right image {
+    width: 176 rpx;
+    height: 176 rpx;
+    flex: 1;
+  }
+
+  .g-promotion .right .txt_content {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30 rpx;
+  }
+
+  .g-promotion .sec2 view {
+    text-align: center;
+    flex-direction: column;
+    border-right: 1 rpx solid #e5e5e5;
+    padding-top: 16 rpx;
+  }
+
+  .g-promotion .sec2 view:last-child {
+    border-right: 0;
+  }
+
+  .g-promotion .sec2 image {
+    width: 176 rpx;
+    height: 176 rpx;
+    margin: 0 auto;
+  }
+
+  /* 热门市场 */
+
+  .g-hotmarket {
+    flex-direction: column;
+    padding-top: 30 rpx;
+    box-sizing: border-box;
+    margin-top: 20 rpx;
+  }
+
+  .g-hotmarket .title {
+    flex: 1;
+    background: url(../../images/title_bg.png) center center no-repeat;
+    background-size: 300 rpx 10 rpx;
+    text-align: center;
+    color: #333;
+    font-size: 30 rpx;
+    justify-content: center;
+  }
+
+  .g-hotmarket .list {
+    margin: 30 rpx 0;
+    flex-wrap: wrap;
+  }
+
+  .g-hotmarket .item {
+    width: 180 rpx;
+    margin: 10 rpx 3 rpx;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .g-hotmarket .item image {
+    width: 132 rpx;
+    height: 132 rpx;
+    margin: 0 auto 10 rpx auto;
+  }
+
+  .g-hotmarket .item .txt {
+    font-size: 24 rpx;
+  }
+
+  /* 猜你喜欢 */
+
+  .g-like {
+    flex-direction: column;
+    padding: 30 rpx 20 rpx;
+    margin-top: 20 rpx;
+    background: #f1f1f1;
+  }
+
+  .g-like .title {
+    flex: 1;
+    background: url(../../images/title_bg.png) center center no-repeat;
+    background-size: 300 rpx 10 rpx;
+    text-align: center;
+    color: #333;
+    font-size: 30 rpx;
+    justify-content: center;
+    margin-bottom: 20 rpx;
+  }
+
+  .g-like .list {
+    background: #f1f1f1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .g-like .item {
+    width: 345 rpx;
+    flex-direction: column;
+    margin-top: 24 rpx;
+  }
+
+  .g-like .item .label {
+    flex-wrap: wrap;
+  }
+
+  .g-like .info {
+    padding: 0 20 rpx 20 rpx;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .g-like .label text {
+    background: #eff3f6;
+    color: #5a6f7a;
+    font-size: 24 rpx;
+    margin: 6 rpx 10 rpx 6 rpx 0;
+  }
+
+  .g-like .item image {
+    width: 345 rpx;
+    height: 450 rpx;
+    margin-bottom: 10 rpx;
+  }
+
+  .g-like .number {
+    margin-top: 10 rpx;
+    justify-content: space-between;
+  }
+
+  .g-like .number .prize {
+    font-size: 32 rpx;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .g-like .number .collect {
+    font-size: 26 rpx;
+    color: #999;
+    background: url(../../images/collect.png) no-repeat right center;
+    background-size: 24 rpx 24 rpx;
+    padding-right: 30 rpx;
+  }
+
+  .g-like .number .collect_cur {
+    background-image: url(../../images/collect_cur.png);
+  }
+
+</style>
+
+<script>
+  import wepy from 'wepy';
+  export default class Index extends wepy.page {
+    data = {
+      imgUrls: [
+        {
+          link: '/pages/index/index',
+          url: 'http://s2.mogucdn.com/mlcdn/c45406/170721_6gkdkh7gc0976i4b362a39i4c43dk_750x390.jpg_800x9999.v1c7E.70.webp'
+        }, {
+          link: '/pages/logs/logs',
+          url: 'http://s2.mogucdn.com/mlcdn/c45406/170717_0280220d6k623b33ejd4a78889ga7_750x390.jpg_800x9999.v1c7E.70.webp'
+        }, {
+          link: '/pages/test/test',
+          url: 'http://s11.mogucdn.com/mlcdn/c45406/170721_2g85f9dl8c37i3g45007i1lbga0lc_750x390.jpg_800x9999.v1c7E.70.webp'
+        }
+      ],
+      indicatorDots: true,
+      autoplay: true,
+      interval: 5000,
+      duration: 1000,
+      userInfo: {}
+    }
+
+    onLoad() {
+    };
+
+  }
+</script>

@@ -1,0 +1,25 @@
+<view class="g-register">
+
+    <view class="form-group form-group2">
+        <label>国家与地区</label>
+        <view class="picker">
+            <text class="country">中国</text>
+            <text class="plus">+</text>
+            <text class="number">86</text>
+            <image class="arrow" src="../../images/arrow.png" />
+        </view>
+    </view>
+
+    <view class="form-group">
+        <label>你的手机号码是?</label>
+        <input placeholder="输入手机号码" bindinput="phoneInput" />
+    </view>
+
+    <view class="form-group">
+        <label>验证码</label>
+        <input placeholder="输入验证码" bindinput="codeInput" />
+        <text class="tip">发送验证码</text>
+    </view>
+    <button class="btn-login" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">登录</button>
+
+</view>

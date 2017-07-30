@@ -1,0 +1,44 @@
+
+
+/* 搜索 */
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    height: 70rpx;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
+.search-bar .icon {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.search-bar form {
+    flex: 1;
+    margin: 0 20rpx;
+    position: relative;
+}
+
+.search-bar form .icon-search {
+    width: 36rpx;
+    height: 36rpx;
+    position: absolute;
+    left: 10rpx;
+    top: 10rpx;
+}
+
+.search-bar form input {
+    font-size: 26rpx;
+    box-sizing: border-box;
+    padding-left: 60rpx;
+    color: #999;
+    background: #eee;
+    border-radius: 6rpx;
+}

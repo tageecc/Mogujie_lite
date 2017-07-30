@@ -1,0 +1,1 @@
+page{background-color:#f1f1f1}View{display:flex;background-color:#fff}.flex{flex:1}.container{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:200 rpx 0;box-sizing:border-box}.wrapper{width:730 rpx;margin:0 auto}

@@ -1,0 +1,221 @@
+
+  <!-- 搜索 -->
+  <include src="../__template/searchBar/searchBar.wxml"/>
+
+  <!-- 轮播 -->
+  <swiper class="g-swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" indicator-active-color="#f96969">
+    <block  wx:for="{{imgUrls}}">
+      <swiper-item>
+        <navigator url="{{item.link}}" hover-class="navigator-hover">
+          <image src="{{item.url}}" class="slide-image" mode="aspectFit"/>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 特卖 -->
+  <view class="g-intro">
+    <!-- 品牌特卖 -->
+    <view class="intro-item">
+      <text class="title">品牌特卖</text>
+      <text class="subtitle">大牌9.9元疯狂秒</text>
+      <image src="https://s3.mogucdn.com/mlcdn/c45406/170721_6j9i7l8448f6e6jibhkc28h7agl6i_200x200.png"/>
+    </view>
+    <!-- 新人专享 -->
+    <view class="intro-item">
+      <text class="title">品牌特卖</text>
+      <text class="subtitle">大牌9.9元疯狂秒</text>
+      <image src="https://s3.mogucdn.com/mlcdn/c45406/170721_6j9i7l8448f6e6jibhkc28h7agl6i_200x200.png"/>
+    </view>
+    <!-- 1元拼团 -->
+    <view class="intro-item">
+      <text class="title">品牌特卖</text>
+      <text class="subtitle">大牌9.9元疯狂秒</text>
+      <image src="https://s3.mogucdn.com/mlcdn/c45406/170721_6j9i7l8448f6e6jibhkc28h7agl6i_200x200.png"/>
+    </view>
+  </view>
+
+  <!-- 快抢秒杀 -->
+  <view class="g-seckill">
+    <view class="flex">
+      <text class="title">16点快抢·距离结束</text>
+      <view class="deadline">
+        <text>00</text>
+        :
+        <text>00</text>
+        :
+        <text>00</text>
+      </view>
+      <view class="more"/>
+    </view>
+
+    <scroll-view scroll-x class="scroll">
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/1689c6/170721_3hd3lhg3je2b3ei8bc93f3f349b77_640x640.jpg_320x999.webp"/>
+        <text class="title">去死皮去角质嫩白美腿足膜</text>
+        <text class="new-price">¥39.00</text>
+        <text class="old-price">¥89.00</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/1689c6/170721_3hd3lhg3je2b3ei8bc93f3f349b77_640x640.jpg_320x999.webp"/>
+        <text class="title">去死皮去角质嫩白美腿足膜</text>
+        <text class="new-price">¥39.00</text>
+        <text class="old-price">¥89.00</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/1689c6/170721_3hd3lhg3je2b3ei8bc93f3f349b77_640x640.jpg_320x999.webp"/>
+        <text class="title">去死皮去角质嫩白美腿足膜</text>
+        <text class="new-price">¥39.00</text>
+        <text class="old-price">¥89.00</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/1689c6/170721_3hd3lhg3je2b3ei8bc93f3f349b77_640x640.jpg_320x999.webp"/>
+        <text class="title">去死皮去角质嫩白美腿足膜</text>
+        <text class="new-price">¥39.00</text>
+        <text class="old-price">¥89.00</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/1689c6/170721_3hd3lhg3je2b3ei8bc93f3f349b77_640x640.jpg_320x999.webp"/>
+        <text class="title">去死皮去角质嫩白美腿足膜</text>
+        <text class="new-price">¥39.00</text>
+        <text class="old-price">¥89.00</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 特惠促销 -->
+  <view class="g-promotion">
+    <View class="promotion-title">超实惠-促销直达</View>
+    <view class="sec1">
+      <view class="left">
+        <text class="title">女装年中聚惠</text>
+        <text class="subtitle">惠至4折</text>
+        <image src="http://s2.mogucdn.com/mlcdn/c45406/170721_42k9hf8g1biib5bclb66d4bfd5351_200x200.png_360x360.v1cAC.70.webp"/>
+      </view>
+      <view class="right">
+        <view>
+          <view class="txt_content">
+            <text class="title">连衣裙嗨购</text>
+            <text class="subtitle">月末狂欢</text>
+          </view>
+          <image src="http://s2.mogucdn.com/mlcdn/c45406/170721_45j8e6ijf01e3g5e9e9c6l1gfchk2_180x180.png_280x280.v1cAC.70.webp"/>
+        </view>
+        <view>
+          <view class="txt_content">
+            <text class="title">省心出门装</text>
+            <text class="subtitle">百元搞定一身搭</text>
+          </view>
+          <image src="http://s11.mogucdn.com/mlcdn/c45406/170721_14l1h3acgga4160dbi3e5dgc0iggk_180x180.png_280x280.v1cAC.70.webp"/>
+        </view>
+      </view>
+    </view>
+    <view class="sec2">
+      <view class="flex">
+        <text class="title">凉鞋2双折扣价</text>
+        <text class="subtitle">夏清仓&秋上新</text>
+        <image src="http://s17.mogucdn.com/mlcdn/c45406/170721_3508g869264k2k79k4igf1i09c671_180x180.png_280x280.v1cAC.70.webp"/>
+      </view>
+      <view class="flex">
+        <text class="title">凉鞋2双折扣价</text>
+        <text class="subtitle">夏清仓&秋上新</text>
+        <image src="http://s17.mogucdn.com/mlcdn/c45406/170721_3508g869264k2k79k4igf1i09c671_180x180.png_280x280.v1cAC.70.webp"/>
+      </view>
+      <view class="flex">
+        <text class="title">凉鞋2双折扣价</text>
+        <text class="subtitle">夏清仓&秋上新</text>
+        <image src="http://s17.mogucdn.com/mlcdn/c45406/170721_3508g869264k2k79k4igf1i09c671_180x180.png_280x280.v1cAC.70.webp"/>
+      </view>
+    </view>
+  </view>
+
+  <!-- 热门市场 -->
+  <view class="g-hotmarket">
+    <view class="title">热门市场</view>
+    <view class="list">
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/c45406/170720_25f9dhcigekbj4e93ekf5dad3jfaa_180x180.png_300x9999.v1c7E.70.webp"/>
+        <text class="txt">省心套装</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 猜你喜欢 -->
+  <view class="g-like">
+    <view class="title">猜你喜欢</view>
+    <view class="list">
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/c45406/170415_057g127ll7lfc56a18h6jkc0c543d_640x960.jpg_600x800.v1cAC.70.webp"/>
+        <view class="info">
+          <view class="label">
+            <text>无袖连衣裙</text>
+            <text>露背</text>
+            <text>蕾丝</text>
+            <text>名媛</text>
+            <text>性感</text>
+            <text>镂空</text>
+            <text>高腰</text>
+          </view>
+          <view class="number">
+            <view class="prize">¥148</view>
+            <view class="collect">4412</view>
+          </view>
+        </view>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/c45406/170415_057g127ll7lfc56a18h6jkc0c543d_640x960.jpg_600x800.v1cAC.70.webp"/>
+        <view class="info">
+          <view class="label">
+            <text>无袖连衣裙</text>
+            <text>露背</text>
+            <text>蕾丝</text>
+            <text>名媛</text>
+            <text>性感</text>
+            <text>镂空</text>
+            <text>高腰</text>
+          </view>
+          <view class="number">
+            <view class="prize">¥148</view>
+            <view class="collect collect_cur">4412</view>
+          </view>
+        </view>
+      </view>
+      <view class="item">
+        <image src="http://s2.mogucdn.com/mlcdn/c45406/170415_057g127ll7lfc56a18h6jkc0c543d_640x960.jpg_600x800.v1cAC.70.webp"/>
+        <view class="info">
+          <view class="label">
+            <text>无袖连衣裙</text>
+            <text>露背</text>
+            <text>蕾丝</text>
+            <text>名媛</text>
+            <text>性感</text>
+            <text>镂空</text>
+            <text>高腰</text>
+          </view>
+          <view class="number">
+            <view class="prize">¥148</view>
+            <view class="collect">4412</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>

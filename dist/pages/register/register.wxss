@@ -1,0 +1,77 @@
+page {
+    background: #fff;
+}
+
+.g-register {
+    flex-direction: column;
+    padding: 60rpx 30rpx 0;
+}
+
+.form-group {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50rpx;
+    position: relative;
+}
+
+.form-group label {
+    color: #666;
+    font-size: 28rpx;
+    margin-bottom: 30rpx;
+}
+
+.form-group input {
+    font-weight: 700;
+    font-size: 50rpx;
+    color: 999;
+    border-bottom: 1px solid #999;
+    opacity: 0.3;
+    padding: 10rpx 0;
+}
+
+.g-register .form-group .tip {
+    color: #ff6885;
+    font-size: 22rpx;
+    position: absolute;
+    right: 0;
+    top: 80rpx;
+}
+
+.btn-login {
+    width: 100%;
+    margin-top: 50rpx;
+    background-color: rgb(255, 24, 119);
+    color: #fff;
+}
+
+.g-register .form-group2 label {
+    font-size: 32rpx;
+    color: #999;
+    font-weight: 700;
+}
+
+.picker {
+    color: #333;
+    font-weight: 700;
+    font-size: 56rpx;
+    margin: 0 auto;
+}
+
+.picker .plus {
+    font-size: 30rpx;
+    margin: 18rpx;
+}
+
+.picker .number {
+    color: #999;
+    font-size: 46rpx;
+    margin-top: 10rpx;
+}
+
+.g-register .form-group2 .arrow {
+    width: 20rpx;
+    height: 40rpx;
+    position: absolute;
+    top: 74rpx;
+    right: 0;
+}

@@ -1,0 +1,94 @@
+<!-- 搜索 -->
+<include src="../__template/searchBar/searchBar.wxml" />
+
+<!-- 分类tab切换 -->
+<view class="g-category">
+    <view class="category-nav">
+        <scroll-view scroll-y>
+            <view>正在流行</view>
+            <view>上衣</view>
+            <view>裤子</view>
+            <view class="cur">裙子</view>
+            <view>内衣</view>
+            <view>女鞋</view>
+            <view>男友</view>
+            <view>包包</view>
+            <view>运动</view>
+            <view>配饰</view>
+            <view>美妆</view>
+            <view>个护</view>
+            <view>家居</view>
+            <view>百货</view>
+            <view>母婴</view>
+            <view>食品</view>
+        </scroll-view>
+    </view>
+
+    <view class="category-content">
+        <view class="sub-categroy">
+            <view>
+                <image src="http://s17.mogucdn.com/p2/170210/upload_2gdcalaj0a2alf85b5fl5g3f70l8k_130x130.jpg_300x9999.v1c7E.70.webp" />
+                <text>时尚套装</text>
+            </view>
+            <view>
+                <image src="http://s17.mogucdn.com/p2/170210/upload_2gdcalaj0a2alf85b5fl5g3f70l8k_130x130.jpg_300x9999.v1c7E.70.webp" />
+                <text>时尚套装</text>
+            </view>
+            <view>
+                <image src="http://s17.mogucdn.com/p2/170210/upload_2gdcalaj0a2alf85b5fl5g3f70l8k_130x130.jpg_300x9999.v1c7E.70.webp" />
+                <text>时尚套装</text>
+            </view>
+            <view>
+                <image src="http://s17.mogucdn.com/p2/170210/upload_2gdcalaj0a2alf85b5fl5g3f70l8k_130x130.jpg_300x9999.v1c7E.70.webp" />
+                <text>时尚套装</text>
+            </view>
+            <view>
+                <image src="http://s17.mogucdn.com/p2/170210/upload_2gdcalaj0a2alf85b5fl5g3f70l8k_130x130.jpg_300x9999.v1c7E.70.webp" />
+                <text>时尚套装</text>
+            </view>
+            <view>
+                <image src="http://s17.mogucdn.com/p2/170210/upload_2gdcalaj0a2alf85b5fl5g3f70l8k_130x130.jpg_300x9999.v1c7E.70.webp" />
+                <text>时尚套装</text>
+            </view>
+            <view>
+                <image src="http://s17.mogucdn.com/p2/170210/upload_2gdcalaj0a2alf85b5fl5g3f70l8k_130x130.jpg_300x9999.v1c7E.70.webp" />
+                <text>时尚套装</text>
+            </view>
+            <view>
+                <image src="http://s17.mogucdn.com/p2/170210/upload_2gdcalaj0a2alf85b5fl5g3f70l8k_130x130.jpg_300x9999.v1c7E.70.webp" />
+                <text>时尚套装</text>
+            </view>
+        </view>
+
+        <view class="order-nav">
+            <view><text>综合</text></view>
+            <view><text>销量</text></view>
+            <view><text>新品</text></view>
+        </view>
+
+         <view class="goods-list">
+            <view class="goods">
+                <image src="http://s3.mogucdn.com/mlcdn/c45406/170517_2c5ed17d4l26c73l1jf0ia0327i5c_640x960.jpg_480x618.v1cAC.70.webp" />
+                <text class="sale-num">已售7459件</text>
+                <view class="info">
+                    <text class="title">新款男士短袖T恤男韩版夏季圆领字母上衣修身男装情侣短袖打底衫</text>
+                    <view class="number">
+                        <view class="prize">¥148</view>
+                        <view class="collect">4412</view>
+                    </view>
+                </view>
+            </view>
+            <view class="goods">
+                <image src="http://s3.mogucdn.com/mlcdn/c45406/170517_2c5ed17d4l26c73l1jf0ia0327i5c_640x960.jpg_480x618.v1cAC.70.webp" />
+                <text class="sale-num">已售7459件</text>
+                <view class="info">
+                    <text class="title">新款男士短袖T恤男韩版夏季圆领字母上衣修身男装情侣短袖打底衫</text>
+                    <view class="number">
+                        <view class="prize">¥148</view>
+                        <view class="collect">4412</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

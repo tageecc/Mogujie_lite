@@ -1,0 +1,6 @@
+<!-- nodata -->
+<view class="nodata">
+    <view class="cart"></view>
+    <view class="tip">购物车还是空的哦～</view>
+    <button>去逛逛</button>
+</view>
